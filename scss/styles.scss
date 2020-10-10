@@ -1,0 +1,172 @@
+@import "../utiles/bootstrap-main/scss/functions";
+@import "../utiles/bootstrap-main/scss/variables";
+@import "../utiles/bootstrap-main/scss/mixins/breakpoints";
+@import "header";
+@import "mixins";
+@import "bucles";
+@import "colors";
+@import "footer";
+
+/*GENERALES*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------*/
+
+main {
+    @include lateralsPadding(1rem, 1rem);
+    background: $color-fondo;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container-fluid {
+    @include lateralsPadding(0, 0);
+}
+
+div.obra {
+    img {
+        opacity: 0.3;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-detalles;
+        font-weight: 700;
+        font-size: 2rem;
+        font-style: oblique;
+        text-align: center;
+    }
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+
+.carousel-indicators>li {
+    border-radius: 100%;
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+
+.margenes {
+    margin: 2rem
+}
+
+.customMarcas {
+    padding: 3rem;
+}
+
+.form-control:focus {
+    border-color: $efecto-hover;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fd7e14;
+    /*averiguar box-shadow;*/
+}
+
+.obra {
+    position: relative;
+}
+
+.textoImagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#galeria {
+    div {
+        height: 155px;
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        @include lateralsPadding(.75rem, .75rem);
+        overflow: hidden;
+    }
+
+    div:hover {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+/*MEDIA QUERIES*/
+
+@include media-breakpoint-between(xs, sm) {
+
+    .customMarcas {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@include media-breakpoint-between(sm, md) {
+
+    .customMarcas {
+        padding: 2rem;
+    }
+
+    #galeria {
+        div {
+            height: 115px;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@include media-breakpoint-between(md, lg) {
+    .customMarcas {
+        padding: 1rem;
+    }
+
+    #galeria {
+        div {
+            height: 115px;
+        }
+    }
+
+}
+
+@include media-breakpoint-between(lg, xl) {
+    #galeria {
+        div {
+            height: 155px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #galeria {
+        div {
+            height: 190px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/*----------------------------------------------*/

@@ -1,0 +1,65 @@
+@import "colors";
+
+header {
+    border-bottom: solid .2rem $color-detalles;
+
+    li:hover {
+        background-color: $efecto-hover;
+        transition: all .35s;
+    }
+
+    a:hover {
+        color: $white;
+        text-decoration: none;
+        transition: all .35s;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .active {
+        color: $efecto-hover;
+    }
+
+    li {
+        position: relative;
+
+        >ul {
+            position: absolute;
+            box-sizing: content-box;
+            max-height: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-left: solid 2px $color-detalles;
+            border-bottom: solid 2px $color-detalles;
+            border-right: solid 2px $color-detalles;
+            transform: translateX(-1%);
+        }
+    }
+
+    li:hover>ul {
+        display: block;
+        max-height: 300px;
+        width: 100%;
+        list-style: none;
+        transition: all .6s;
+    }
+}
+
+.menuLink {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: 400;
+    font-size: .99rem;
+    padding: 1.2rem 0.9rem;
+}
+
+.subMenu {
+    list-style: none;
+    text-decoration: none;
+}

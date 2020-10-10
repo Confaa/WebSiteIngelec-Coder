@@ -1,0 +1,5 @@
+/*Delay Marcas y Galeria*/
+@for $i from 1 through 19 {
+    .marca-galeria#{$i}{animation-delay: 120ms * $i;}
+}
+/*-----------------------*/

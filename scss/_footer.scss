@@ -1,0 +1,38 @@
+@import "colors";
+
+footer {
+
+    background-image: linear-gradient(to bottom, $inicio-gradiente-footer, $color-detalles);
+
+    .row {
+        margin: 1rem;
+
+        div {
+            padding: 0;
+        }
+    }
+
+    ul,
+    li,
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        margin: 0;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    p,
+    h5 {
+        color: white;
+        padding: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    .copyright {
+        background: #003178;
+    }
+}

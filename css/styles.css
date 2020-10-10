@@ -1,0 +1,243 @@
+/*PALETA DE COLORES DE MI PAGINA*/
+/*---------------------------------*/
+header {
+  border-bottom: solid 0.2rem #003f9a; }
+  header li:hover {
+    background-color: #ff9900;
+    transition: all .35s; }
+  header a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: all .35s; }
+  header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0; }
+  header .active {
+    color: #ff9900; }
+  header li {
+    position: relative; }
+    header li > ul {
+      position: absolute;
+      box-sizing: content-box;
+      max-height: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-left: solid 2px #003f9a;
+      border-bottom: solid 2px #003f9a;
+      border-right: solid 2px #003f9a;
+      transform: translateX(-1%); }
+  header li:hover > ul {
+    display: block;
+    max-height: 300px;
+    width: 100%;
+    list-style: none;
+    transition: all .6s; }
+
+.menuLink {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-weight: 400;
+  font-size: .99rem;
+  padding: 1.2rem 0.9rem; }
+
+.subMenu {
+  list-style: none;
+  text-decoration: none; }
+
+/*Delay Marcas y Galeria*/
+.marca-galeria1 {
+  animation-delay: 120ms; }
+
+.marca-galeria2 {
+  animation-delay: 240ms; }
+
+.marca-galeria3 {
+  animation-delay: 360ms; }
+
+.marca-galeria4 {
+  animation-delay: 480ms; }
+
+.marca-galeria5 {
+  animation-delay: 600ms; }
+
+.marca-galeria6 {
+  animation-delay: 720ms; }
+
+.marca-galeria7 {
+  animation-delay: 840ms; }
+
+.marca-galeria8 {
+  animation-delay: 960ms; }
+
+.marca-galeria9 {
+  animation-delay: 1080ms; }
+
+.marca-galeria10 {
+  animation-delay: 1200ms; }
+
+.marca-galeria11 {
+  animation-delay: 1320ms; }
+
+.marca-galeria12 {
+  animation-delay: 1440ms; }
+
+.marca-galeria13 {
+  animation-delay: 1560ms; }
+
+.marca-galeria14 {
+  animation-delay: 1680ms; }
+
+.marca-galeria15 {
+  animation-delay: 1800ms; }
+
+.marca-galeria16 {
+  animation-delay: 1920ms; }
+
+.marca-galeria17 {
+  animation-delay: 2040ms; }
+
+.marca-galeria18 {
+  animation-delay: 2160ms; }
+
+.marca-galeria19 {
+  animation-delay: 2280ms; }
+
+/*-----------------------*/
+/*PALETA DE COLORES DE MI PAGINA*/
+/*---------------------------------*/
+/*PALETA DE COLORES DE MI PAGINA*/
+/*---------------------------------*/
+footer {
+  background-image: linear-gradient(to bottom, #2871cc, #003f9a); }
+  footer .row {
+    margin: 1rem; }
+    footer .row div {
+      padding: 0; }
+  footer ul,
+  footer li,
+  footer a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 0; }
+  footer a:hover {
+    color: white; }
+  footer p,
+  footer h5 {
+    color: white;
+    padding: 0;
+    margin-bottom: 0.2rem; }
+  footer .copyright {
+    background: #003178; }
+
+/*GENERALES*/
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-family: 'Roboto', sans-serif; }
+
+/*---------------------------------*/
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #78c1ff; }
+
+h1 {
+  font-size: 2rem; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+div.obra img {
+  opacity: 0.3; }
+
+div.obra a {
+  text-decoration: none;
+  color: #003f9a;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: oblique;
+  text-align: center; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; }
+
+.carousel-indicators > li {
+  border-radius: 100%;
+  height: 0.8rem;
+  width: 0.8rem; }
+
+.margenes {
+  margin: 2rem; }
+
+.customMarcas {
+  padding: 3rem; }
+
+.form-control:focus {
+  border-color: #ff9900;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fd7e14;
+  /*averiguar box-shadow;*/ }
+
+.obra {
+  position: relative; }
+
+.textoImagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#galeria div {
+  height: 155px;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  overflow: hidden; }
+
+#galeria div:hover {
+  transform: scale(1.05, 1.05); }
+
+/*MEDIA QUERIES*/
+@media (max-width: 575.98px) {
+  .customMarcas {
+    padding: 2rem; }
+  h1 {
+    font-size: 1.5rem; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .customMarcas {
+    padding: 2rem; }
+  #galeria div {
+    height: 115px; }
+  h1 {
+    font-size: 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .customMarcas {
+    padding: 1rem; }
+  #galeria div {
+    height: 115px; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #galeria div {
+    height: 155px; }
+  p {
+    font-size: 1.2rem; } }
+
+@media (min-width: 1200px) {
+  #galeria div {
+    height: 190px; }
+  p {
+    font-size: 1.2rem; } }
+
+/*----------------------------------------------*/
