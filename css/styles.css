@@ -124,7 +124,7 @@ footer {
     color: white;
     margin: 0; }
   footer a:hover {
-    color: white; }
+    color: orange; }
   footer p,
   footer h5 {
     color: white;
@@ -230,14 +230,10 @@ div.obra a {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #galeria div {
-    height: 155px; }
-  p {
-    font-size: 1.2rem; } }
+    height: 155px; } }
 
 @media (min-width: 1200px) {
   #galeria div {
-    height: 190px; }
-  p {
-    font-size: 1.2rem; } }
+    height: 190px; } }
 
 /*----------------------------------------------*/
