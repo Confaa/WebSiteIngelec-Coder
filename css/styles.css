@@ -131,7 +131,9 @@ footer {
     padding: 0;
     margin-bottom: 0.2rem; }
   footer .copyright {
-    background: #003178; }
+    background: #003178;
+    font-size: .8rem;
+    padding: .5rem; }
 
 /*GENERALES*/
 * {
