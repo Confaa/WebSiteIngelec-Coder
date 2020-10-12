@@ -129,13 +129,14 @@ footer {
   footer h5 {
     color: white;
     padding: 0;
-    margin-bottom: 0.2rem; }
+    margin-bottom: 0.6rem; }
   footer .copyright {
     background: #003178;
     font-size: .8rem;
     padding: .5rem; }
   footer .navbar-brand {
-    margin-right: 0; }
+    margin-right: 0;
+    padding-top: 0; }
 
 /*GENERALES*/
 * {
