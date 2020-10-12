@@ -113,7 +113,7 @@ header {
 footer {
   background-image: linear-gradient(to bottom, #2871cc, #003f9a); }
   footer .row {
-    margin: 1rem; }
+    margin: 1rem 0rem; }
     footer .row div {
       padding: 0; }
   footer ul,
@@ -124,14 +124,18 @@ footer {
     color: white;
     margin: 0; }
   footer a:hover {
-    color: white; }
+    color: orange; }
   footer p,
   footer h5 {
     color: white;
     padding: 0;
     margin-bottom: 0.2rem; }
   footer .copyright {
-    background: #003178; }
+    background: #003178;
+    font-size: .8rem;
+    padding: .5rem; }
+  footer .navbar-brand {
+    margin-right: 0; }
 
 /*GENERALES*/
 * {
@@ -230,14 +234,10 @@ div.obra a {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #galeria div {
-    height: 155px; }
-  p {
-    font-size: 1.2rem; } }
+    height: 155px; } }
 
 @media (min-width: 1200px) {
   #galeria div {
-    height: 190px; }
-  p {
-    font-size: 1.2rem; } }
+    height: 190px; } }
 
 /*----------------------------------------------*/

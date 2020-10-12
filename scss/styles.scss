@@ -151,10 +151,6 @@ div.obra {
             height: 155px;
         }
     }
-
-    p {
-        font-size: 1.2rem;
-    }
 }
 
 @include media-breakpoint-up(xl) {
@@ -162,10 +158,6 @@ div.obra {
         div {
             height: 190px;
         }
-    }
-
-    p {
-        font-size: 1.2rem;
     }
 }
 
