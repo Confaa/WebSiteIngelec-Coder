@@ -10,6 +10,10 @@ footer {
         div {
             padding: 0;
         }
+
+        i{
+            color: $efecto-hover;
+        }
     }
 
     ul,
@@ -22,7 +26,7 @@ footer {
     }
 
     a:hover {
-        color: orange;
+        color: $efecto-hover;
     }
 
     p,
@@ -41,5 +45,8 @@ footer {
     .navbar-brand{
         margin-right: 0;
         padding-top: 0;
+    }
+    .navFooter{
+        margin-left: .5rem;
     }
 }
