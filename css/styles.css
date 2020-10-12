@@ -112,10 +112,15 @@ header {
 /*---------------------------------*/
 footer {
   background-image: linear-gradient(to bottom, #2871cc, #003f9a); }
+  footer .container {
+    padding-left: 0rem;
+    padding-right: 0rem; }
   footer .row {
     margin: 1rem 0rem; }
     footer .row div {
       padding: 0; }
+    footer .row i {
+      color: #ff9900; }
   footer ul,
   footer li,
   footer a {
@@ -124,18 +129,21 @@ footer {
     color: white;
     margin: 0; }
   footer a:hover {
-    color: orange; }
+    color: #ff9900; }
   footer p,
   footer h5 {
     color: white;
     padding: 0;
-    margin-bottom: 0.2rem; }
+    margin-bottom: 0.6rem; }
   footer .copyright {
     background: #003178;
-    font-size: .8rem;
+    font-size: .9rem;
     padding: .5rem; }
   footer .navbar-brand {
-    margin-right: 0; }
+    margin-right: 0;
+    padding-top: 0; }
+  footer .navFooter {
+    margin-left: .5rem; }
 
 /*GENERALES*/
 * {

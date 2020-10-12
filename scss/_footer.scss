@@ -1,14 +1,22 @@
 @import "colors";
+@import "mixins";
 
 footer {
 
     background-image: linear-gradient(to bottom, $inicio-gradiente-footer, $color-detalles);
 
+    .container{
+        @include lateralsPadding(0rem, 0rem);
+    }
     .row {
         margin: 1rem 0rem;
 
         div {
             padding: 0;
+        }
+
+        i{
+            color: $efecto-hover;
         }
     }
 
@@ -22,23 +30,27 @@ footer {
     }
 
     a:hover {
-        color: orange;
+        color: $efecto-hover;
     }
 
     p,
     h5 {
         color: white;
         padding: 0;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.6rem;
     }
 
     .copyright {
         background: #003178;
-        font-size: .8rem;
+        font-size: .9rem;
         padding: .5rem;
     }
 
     .navbar-brand{
         margin-right: 0;
+        padding-top: 0;
+    }
+    .navFooter{
+        margin-left: .5rem;
     }
 }
