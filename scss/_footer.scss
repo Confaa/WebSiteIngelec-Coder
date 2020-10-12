@@ -1,9 +1,13 @@
 @import "colors";
+@import "mixins";
 
 footer {
 
     background-image: linear-gradient(to bottom, $inicio-gradiente-footer, $color-detalles);
 
+    .container{
+        @include lateralsPadding(0rem, 0rem);
+    }
     .row {
         margin: 1rem 0rem;
 
@@ -38,7 +42,7 @@ footer {
 
     .copyright {
         background: #003178;
-        font-size: .8rem;
+        font-size: .9rem;
         padding: .5rem;
     }
 
