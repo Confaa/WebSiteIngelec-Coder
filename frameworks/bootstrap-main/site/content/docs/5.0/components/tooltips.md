@@ -330,7 +330,7 @@ Toggles an element's tooltip. **Returns to the caller before the tooltip has act
 
 #### dispose
 
-Hides and destroys an element's tooltip. Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
+Hides and destroys an element's tooltip (Removes stored data on the DOM element). Tooltips that use delegation (which are created using [the `selector` option](#options)) cannot be individually destroyed on descendant trigger elements.
 
 {{< highlight js >}}tooltip.dispose(){{< /highlight >}}
 
@@ -357,6 +357,15 @@ Toggles the ability for an element's tooltip to be shown or hidden.
 Updates the position of an element's tooltip.
 
 {{< highlight js >}}tooltip.update(){{< /highlight >}}
+
+#### getInstance
+
+*Static* method which allows you to get the tooltip instance associated with a DOM element
+
+{{< highlight js >}}
+var exampleTriggerEl = document.getElementById('example')
+var tooltip = bootstrap.Tooltip.getInstance(exampleTriggerEl) // Returns a Bootstrap tooltip instance
+{{< /highlight >}}
 
 ### Events
 
