@@ -4,26 +4,37 @@
 main {
     .container-fluid {
         @include lateralsPaddings(0, 0);
-
-        .somos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem;
-            background-color: $inicio-gradiente-footer;
-            color: white;
-            h2{
-                letter-spacing: .5rem;
-                padding: 1rem;
-            }
+    }
+    .somos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color: $inicio-gradiente-footer;
+        color: white;
+        text-align: center;
+        h2 {
+            letter-spacing: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 0.5rem;
         }
     }
+
     #rubros {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
         background-color: $sectionIcons;
 
+        > h3 {
+            text-align: center;
+            color: $efecto-hover;
+            padding-bottom: 4rem;
+            font-style: italic;
+            font-size: 4rem;
+        }
         > div.row {
             align-items: center;
             @include lateralsPaddings(1rem, 1rem);
@@ -37,10 +48,10 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 16rem;
-            height: 16rem;
+            width: 12rem;
+            height: 12rem;
             padding: 0.5rem;
-            font-size: 8rem;
+            font-size: 6rem;
             background-color: $color-detalles;
             color: #fff;
             border-radius: 50%;
@@ -52,6 +63,7 @@ main {
             font-size: 3rem;
             font-weight: 700;
             font-style: italic;
+            text-align: left;
         }
     }
 }

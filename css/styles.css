@@ -1,7 +1,8 @@
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
 header {
-  border-bottom: solid 0.2rem #003f9a; }
+  border-bottom: solid 0.2rem #003f9a;
+  background-color: white; }
   header li:hover {
     background-color: #ff9900;
     transition: all .35s; }
@@ -150,22 +151,32 @@ footer {
 main .container-fluid {
   padding-left: 0;
   padding-right: 0; }
-  main .container-fluid .somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-    background-color: #2871cc;
-    color: white; }
-    main .container-fluid .somos h2 {
-      letter-spacing: .5rem;
-      padding: 1rem; }
+
+main .somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #2871cc;
+  color: white;
+  text-align: center; }
+  main .somos h2 {
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem; }
+  main .somos p {
+    margin-bottom: 0.5rem; }
 
 main #rubros {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
   background-color: black; }
+  main #rubros > h3 {
+    text-align: center;
+    color: #ff9900;
+    padding-bottom: 4rem;
+    font-style: italic;
+    font-size: 4rem; }
   main #rubros > div.row {
     align-items: center;
     padding-left: 1rem;
@@ -178,10 +189,10 @@ main #rubros {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
     padding: 0.5rem;
-    font-size: 8rem;
+    font-size: 6rem;
     background-color: #003f9a;
     color: #fff;
     border-radius: 50%;
@@ -190,7 +201,8 @@ main #rubros {
     color: white;
     font-size: 3rem;
     font-weight: 700;
-    font-style: italic; }
+    font-style: italic;
+    text-align: left; }
 
 /*GENERALES*/
 * {

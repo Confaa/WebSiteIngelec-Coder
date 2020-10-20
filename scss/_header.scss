@@ -2,7 +2,7 @@
 
 header {
     border-bottom: solid .2rem $color-detalles;
-
+    background-color: white;
     li:hover {
         background-color: $efecto-hover;
         transition: all .35s;
