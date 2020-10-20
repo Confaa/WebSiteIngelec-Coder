@@ -150,6 +150,17 @@ footer {
 main .container-fluid {
   padding-left: 0;
   padding-right: 0; }
+  main .container-fluid .somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #2871cc;
+    color: white; }
+    main .container-fluid .somos h2 {
+      letter-spacing: .5rem;
+      padding: 1rem; }
 
 main #rubros {
   padding-top: 10rem;
@@ -191,7 +202,7 @@ html {
 
 /*---------------------------------*/
 main {
-  background: #78c1ff; }
+  background: #2871cc; }
 
 h1 {
   font-size: 2rem; }
