@@ -6,7 +6,7 @@ footer {
     background-image: linear-gradient(to bottom, $inicio-gradiente-footer, $color-detalles);
 
     .container{
-        @include lateralsPadding(0rem, 0rem);
+        @include lateralsPaddings(0rem, 0rem);
     }
     .row {
         margin: 1rem 0rem;

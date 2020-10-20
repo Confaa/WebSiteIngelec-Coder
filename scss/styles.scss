@@ -6,6 +6,7 @@
 @import "bucles";
 @import "colors";
 @import "footer";
+@import "index";
 
 /*GENERALES*/
 * {
@@ -25,10 +26,6 @@ main {
 
 h1 {
     font-size: 2rem;
-}
-
-.container-fluid {
-    @include lateralsPadding(1rem, 1rem);
 }
 
 div.obra {
@@ -92,7 +89,7 @@ div.obra {
         height: 155px;
         margin-top: .75rem;
         margin-bottom: .75rem;
-        @include lateralsPadding(.75rem, .75rem);
+        @include lateralsPaddings(.75rem, .75rem);
         overflow: hidden;
     }
 
@@ -161,3 +158,5 @@ div.obra {
 }
 
 /*----------------------------------------------*/
+
+

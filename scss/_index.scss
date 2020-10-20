@@ -1,0 +1,43 @@
+@import "colors";
+@import "mixins";
+
+main {
+    .container-fluid {
+        @include lateralsPaddings(0, 0);
+    }
+    #rubros {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        background-color: $sectionIcons;
+
+        > div.row {
+            align-items: center;
+            @include lateralsPaddings (1rem, 1rem);
+            margin-bottom: 5rem;
+        }
+        span {
+            display: flex;
+            justify-content: center;
+        }
+        .iconIndex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16rem;
+            height: 16rem;
+            padding: 0.5rem;
+            font-size: 8rem;
+            background-color: $color-detalles;
+            color: #fff;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .iconText {
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+}

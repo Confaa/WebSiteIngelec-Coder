@@ -145,6 +145,42 @@ footer {
   footer .navFooter {
     margin-left: .5rem; }
 
+/*PALETA DE COLORES DE MI PAGINA*/
+/*---------------------------------*/
+main .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+main #rubros {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: black; }
+  main #rubros > div.row {
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem; }
+  main #rubros span {
+    display: flex;
+    justify-content: center; }
+  main #rubros .iconIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 16rem;
+    padding: 0.5rem;
+    font-size: 8rem;
+    background-color: #003f9a;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px; }
+  main #rubros .iconText {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic; }
+
 /*GENERALES*/
 * {
   padding: 0;
@@ -159,10 +195,6 @@ main {
 
 h1 {
   font-size: 2rem; }
-
-.container-fluid {
-  padding-left: 1rem;
-  padding-right: 1rem; }
 
 div.obra img {
   opacity: 0.3; }
