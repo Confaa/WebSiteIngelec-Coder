@@ -155,16 +155,14 @@ html {
 
 /*---------------------------------*/
 main {
-  padding-left: 1rem;
-  padding-right: 1rem;
   background: #78c1ff; }
 
 h1 {
   font-size: 2rem; }
 
 .container-fluid {
-  padding-left: 0;
-  padding-right: 0; }
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 div.obra img {
   opacity: 0.3; }

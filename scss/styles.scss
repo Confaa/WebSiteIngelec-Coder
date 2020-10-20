@@ -20,7 +20,6 @@ html {
 /*---------------------------------*/
 
 main {
-    @include lateralsPadding(1rem, 1rem);
     background: $color-fondo;
 }
 
@@ -29,7 +28,7 @@ h1 {
 }
 
 .container-fluid {
-    @include lateralsPadding(0, 0);
+    @include lateralsPadding(1rem, 1rem);
 }
 
 div.obra {

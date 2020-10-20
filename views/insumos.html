@@ -20,103 +20,123 @@
 </head>
 
 <body>
-    <div class="container-fluid grilla">
-        <header class="sticky-top container-fluid">
-            <nav class="navbar navbar-expand-md bg-light navbar-light">
-                <a class="navbar-brand" class="menuLink img-fluid" href="../index.html"><img
-                        src="../img/logoIngelec.svg" height="50"
-                        class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a class="menuLink" href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="laEmpresa.html">La Empresa</a>
-                        </li>
-                        <!--SOLO CON MENU MOBILE-->
-                        <li class="dropdown d-md-none">
-                            <a class="menuLink dropdown-toggle" href="nuestroTrabajo/index.html"
-                                id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> Nuestro Trabajo </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a>
-                                <a class="dropdown-item" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
-                                <a class="dropdown-item" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a>
-                            </div>
-                        </li>
-                        <!------------------------->
-                        <!--SOLO CON MENU COMPLETO-->
-                        <li><a class="menuLink d-none d-md-block dropdown-toggle"
-                                href="nuestroTrabajo/index.html">Nuestro Trabajo</a>
-                            <ul class="d-none d-md-block subMenu">
-                                <li><a class="menuLink" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a></li>
-                                <li><a class="menuLink" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a></li>
-                                <li><a class="menuLink" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a></li>
-                            </ul>
-                        </li>
-                        <!------------------------->
-                        <li class="bg-dark">
-                            <a class="menuLink active" href="insumos.html">Insumos</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="grilla">
+        <header class="sticky-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-light navbar-light">
+                    <a class="navbar-brand" class="menuLink img-fluid" href="../index.html"><img
+                            src="../img/logoIngelec.svg" height="50"
+                            class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="menuLink" href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="menuLink" href="laEmpresa.html">La Empresa</a>
+                            </li>
+                            <!--SOLO CON MENU MOBILE-->
+                            <li class="dropdown d-md-none">
+                                <a class="menuLink dropdown-toggle" href="nuestroTrabajo/index.html"
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"> Nuestro Trabajo </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a>
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a>
+                                </div>
+                            </li>
+                            <!------------------------->
+                            <!--SOLO CON MENU COMPLETO-->
+                            <li><a class="menuLink d-none d-md-block dropdown-toggle"
+                                    href="nuestroTrabajo/index.html">Nuestro Trabajo</a>
+                                <ul class="d-none d-md-block subMenu">
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a></li>
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
+                                    </li>
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a></li>
+                                </ul>
+                            </li>
+                            <!------------------------->
+                            <li class="bg-dark">
+                                <a class="menuLink active" href="insumos.html">Insumos</a>
+                            </li>
+                            <li>
+                                <a class="menuLink" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Insumos - Ingelec S.R.L.</h1>
-            <h3 class="text-center text-md-left">Disponemos de productos de las siguientes marcas:</h3>
-            <div class="container">
-                <div class="row justify-content-between align-items-center px-md-10">
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria1">
-                        <img src="../img/img-marcas/weg-logo.svg" class="img-fluid w-100" alt="Logo WEG"></div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria2">
-                        <img src="../img/img-marcas/schneider-logo.svg" class="img-fluid w-100" alt="Logo Schneider">
+            <div class="container-fluid">
+                <h1>Insumos - Ingelec S.R.L.</h1>
+                <h3 class="text-center text-md-left">Disponemos de productos de las siguientes marcas:</h3>
+                <div class="container">
+                    <div class="row justify-content-between align-items-center px-md-10">
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria1">
+                            <img src="../img/img-marcas/weg-logo.svg" class="img-fluid w-100" alt="Logo WEG"></div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria2">
+                            <img src="../img/img-marcas/schneider-logo.svg" class="img-fluid w-100"
+                                alt="Logo Schneider">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria3">
+                            <img src="../img/img-marcas/prysmian-logo.svg" class="img-fluid w-100" alt="Logo Prysmian">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria4">
+                            <img src="../img/img-marcas/argenplas-logo.svg" class="img-fluid w-100"
+                                alt="Logo Argenplas">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria5">
+                            <img src="../img/img-marcas/genrod-logo.svg" class="img-fluid w-100" alt="Logo Genrod">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria6">
+                            <img src="../img/img-marcas/microcontrol-logo.svg" class="img-fluid w-100"
+                                alt="Logo Micro Control"></div>
                     </div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria3">
-                        <img src="../img/img-marcas/prysmian-logo.svg" class="img-fluid w-100" alt="Logo Prysmian">
+                    <div class="row justify-content-between align-items-center px-md-10">
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria7">
+                            <img src="../img/img-marcas/aea-logo.svg" class="img-fluid w-100" alt="Logo AEA"></div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria8">
+                            <img src="../img/img-marcas/circutor-logo.svg" class="img-fluid w-100" alt="Logo Circutor">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria9">
+                            <img src="../img/img-marcas/ersha-logo.svg" class="img-fluid w-100" alt="Logo Ersha"></div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria10">
+                            <img src="../img/img-marcas/finder-logo.svg" class="img-fluid w-100" alt="Logo Finder">
+                        </div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria11">
+                            <img src="../img/img-marcas/tea-logo.svg" class="img-fluid w-100" alt="Logo TEA"></div>
+                        <div
+                            class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria12">
+                            <img src="../img/img-marcas/gatti-logo.svg" class="img-fluid w-100" alt="Logo Gatti"></div>
                     </div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria4">
-                        <img src="../img/img-marcas/argenplas-logo.svg" class="img-fluid w-100" alt="Logo Argenplas">
-                    </div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria5">
-                        <img src="../img/img-marcas/genrod-logo.svg" class="img-fluid w-100" alt="Logo Genrod"></div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria6">
-                        <img src="../img/img-marcas/microcontrol-logo.svg" class="img-fluid w-100"
-                            alt="Logo Micro Control"></div>
-                </div>
-                <div class="row justify-content-between align-items-center px-md-10">
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria7">
-                        <img src="../img/img-marcas/aea-logo.svg" class="img-fluid w-100" alt="Logo AEA"></div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria8">
-                        <img src="../img/img-marcas/circutor-logo.svg" class="img-fluid w-100" alt="Logo Circutor">
-                    </div>
-                    <div class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria9">
-                        <img src="../img/img-marcas/ersha-logo.svg" class="img-fluid w-100" alt="Logo Ersha"></div>
-                    <div
-                        class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria10">
-                        <img src="../img/img-marcas/finder-logo.svg" class="img-fluid w-100" alt="Logo Finder"></div>
-                    <div
-                        class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria11">
-                        <img src="../img/img-marcas/tea-logo.svg" class="img-fluid w-100" alt="Logo TEA"></div>
-                    <div
-                        class="col-6 col-md-4 customMarcas container animate__animated animate__fadeIn marca-galeria12">
-                        <img src="../img/img-marcas/gatti-logo.svg" class="img-fluid w-100" alt="Logo Gatti"></div>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-6 text-center text-md-left">
-                        <a class="navbar-brand img-fluid" href="../index.html"><img src="../img/logoIngelecblanco1px.svg" height="40"
-                            class="animate__animated animate__zoomIn animate__fast" alt=""></a>
+                        <a class="navbar-brand img-fluid" href="../index.html"><img
+                                src="../img/logoIngelecblanco1px.svg" height="40"
+                                class="animate__animated animate__zoomIn animate__fast" alt=""></a>
                         <p>Equipamientos eléctricos industriales.</p>
                         <div class="d-flex justify-content-center justify-content-md-start align-items-start">
                             <i class="fas fas fa-map-marker-alt mr-3" style="font-size: 3rem;"></i>
@@ -129,16 +149,20 @@
                     <hr class="clearfix w-100 d-md-none">
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <ul class="navFooter">
-                            <li><h5>LINKS</h5></li>
+                            <li>
+                                <h5>LINKS</h5>
+                            </li>
                             <li><a href="../index.html"><i class="fas fa-angle-right mr-2"></i>Inicio</a></li>
                             <li><a href="laEmpresa.html"><i class="fas fa-angle-right mr-2"></i>La Empresa</a></li>
-                            <li><a href="nuestroTrabajo/index.html"><i class="fas fa-angle-right mr-2"></i>Nuestro Trabajo</a></li>
+                            <li><a href="nuestroTrabajo/index.html"><i class="fas fa-angle-right mr-2"></i>Nuestro
+                                    Trabajo</a></li>
                             <li><a href="insumos.html"><i class="fas fa-angle-right mr-2"></i>Insumos</a></li>
                             <li><a href="contacto.html"><i class="fas fa-angle-right mr-2"></i>Contacto</a></li>
                         </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none">
-                    <div class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
+                    <div
+                        class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
                         <ul>
                             <li>
                                 <h5 class="text-uppercase font-weight-bold">Contacto</h5>
@@ -147,7 +171,8 @@
                                 <p><i class="fas fa-phone mr-2" style="font-size: 1.2rem;"></i>+549-3456-422796</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com</p>
+                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com
+                                </p>
                             </li>
                         </ul>
                     </div>

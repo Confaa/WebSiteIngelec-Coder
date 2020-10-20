@@ -20,126 +20,138 @@
 </head>
 
 <body>
-    <div class="container-fluid grilla">
-        <header class="sticky-top container-fluid">
-            <nav class="navbar navbar-expand-md bg-light navbar-light">
-                <a class="navbar-brand" class="menuLink img-fluid" href="../index.html"><img
-                        src="../img/logoIngelec.svg" height="50"
-                        class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a class="menuLink" href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="laEmpresa.html">La Empresa</a>
-                        </li>
-                        <!--SOLO CON MENU MOBILE-->
-                        <li class="dropdown d-md-none">
-                            <a class="menuLink dropdown-toggle" href="nuestroTrabajo/index.html"
-                                id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> Nuestro Trabajo </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a>
-                                <a class="dropdown-item" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
-                                <a class="dropdown-item" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a>
-                            </div>
-                        </li>
-                        <!------------------------->
-                        <!--SOLO CON MENU COMPLETO-->
-                        <li><a class="menuLink d-none d-md-block dropdown-toggle"
-                                href="nuestroTrabajo/index.html">Nuestro Trabajo</a>
-                            <ul class="d-none d-md-block subMenu">
-                                <li><a class="menuLink" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a></li>
-                                <li><a class="menuLink" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a></li>
-                                <li><a class="menuLink" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a></li>
-                            </ul>
-                        </li>
-                        <!------------------------->
-                        <li>
-                            <a class="menuLink" href="insumos.html">Insumos</a>
-                        </li>
-                        <li class="bg-dark">
-                            <a class="menuLink active" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="grilla">
+        <header class="sticky-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-light navbar-light">
+                    <a class="navbar-brand" class="menuLink img-fluid" href="../index.html"><img
+                            src="../img/logoIngelec.svg" height="50"
+                            class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="menuLink" href="../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="menuLink" href="laEmpresa.html">La Empresa</a>
+                            </li>
+                            <!--SOLO CON MENU MOBILE-->
+                            <li class="dropdown d-md-none">
+                                <a class="menuLink dropdown-toggle" href="nuestroTrabajo/index.html"
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"> Nuestro Trabajo </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a>
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
+                                    <a class="dropdown-item" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a>
+                                </div>
+                            </li>
+                            <!------------------------->
+                            <!--SOLO CON MENU COMPLETO-->
+                            <li><a class="menuLink d-none d-md-block dropdown-toggle"
+                                    href="nuestroTrabajo/index.html">Nuestro Trabajo</a>
+                                <ul class="d-none d-md-block subMenu">
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraChajari.html">Obra Chajarí</a></li>
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraMercedes.html">Obra Mercedes</a>
+                                    </li>
+                                    <li><a class="menuLink" href="nuestroTrabajo/obraYahape.html">Obra Yahape</a></li>
+                                </ul>
+                            </li>
+                            <!------------------------->
+                            <li>
+                                <a class="menuLink" href="insumos.html">Insumos</a>
+                            </li>
+                            <li class="bg-dark">
+                                <a class="menuLink active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Contacto - Ingelec S.R.L.</h1>
-            <div class="row align-items-center justify-content-between animate__animated animate__zoomIn">
-                <div class="col-10 col-md-5 col-xl-5 mx-auto p-3">
-                    <form class="text-center border border-light p-3 " action="#!">
-                        <p class="h4 mb-4">Contactenos</p>
-                        <!-- Name -->
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default"><img
-                                        src="../img/icons/account_box-black-24dp.svg" alt=""></span>
+            <div class="container-fluid">
+                <h1>Contacto - Ingelec S.R.L.</h1>
+                <div class="row align-items-center justify-content-between animate__animated animate__zoomIn">
+                    <div class="col-10 col-md-5 col-xl-5 mx-auto p-3">
+                        <form class="text-center border border-light p-3 " action="#!">
+                            <p class="h4 mb-4">Contactenos</p>
+                            <!-- Name -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default"><img
+                                            src="../img/icons/account_box-black-24dp.svg" alt=""></span>
+                                </div>
+                                <input type="text" id="defaultContactFormName" class="form-control"
+                                    placeholder="Nombre">
                             </div>
-                            <input type="text" id="defaultContactFormName" class="form-control" placeholder="Nombre">
-                        </div>
-                        <!-- Email -->
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default"><img
-                                        src="../img/icons/email-black-24dp.svg" alt=""></span>
+                            <!-- Email -->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default"><img
+                                            src="../img/icons/email-black-24dp.svg" alt=""></span>
+                                </div>
+                                <input type="email" id="defaultContactFormEmail" class="form-control"
+                                    placeholder="E-mail">
                             </div>
-                            <input type="email" id="defaultContactFormEmail" class="form-control" placeholder="E-mail">
-                        </div>
-                        <!--Telefono-->
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default"><img
-                                        src="../img/icons/call-black-24dp.svg" alt=""></span>
+                            <!--Telefono-->
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default"><img
+                                            src="../img/icons/call-black-24dp.svg" alt=""></span>
+                                </div>
+                                <input type="text" id="defaultContactFormName" class="form-control"
+                                    placeholder="Telefono">
                             </div>
-                            <input type="text" id="defaultContactFormName" class="form-control" placeholder="Telefono">
+                            <!-- Motivo -->
+                            <label>Motivo</label>
+                            <select class="browser-default custom-select mb-4">
+                                <option value="" disabled>Elija una opción</option>
+                                <option value="pres">Presupuestos y/o Cotizaciones</option>
+                                <option value="pagos">Medios de Pago</option>
+                                <option value="disp">Disponibilidad de Insumos</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                            <!-- Message -->
+                            <div class="form-group">
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="8"
+                                    placeholder="Escriba aqui su consulta"></textarea>
+                            </div>
+                            <!-- Copy -->
+                            <div class="custom-control custom-checkbox mb-4">
+                                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                                <label class="custom-control-label" for="defaultContactFormCopy">¿Acepta recibir el
+                                    Newsletter? </label>
+                            </div>
+                            <!-- Send button -->
+                            <button class="btn btn-info btn-block bg-primary form-control"
+                                type="reset">Restablecer</button>
+                            <button class="btn btn-info btn-block bg-primary form-control" type="submit">Enviar</button>
+                    </div>
+                    <div
+                        class="col-10 col-md-7 col-xl-6 mx-auto p-3 animate__animated animate__zoomIn animate__delay-1s">
+                        <h3>Donde estamos?</h3>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13712.903080721304!2d-57.995832!3d-30.7682423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7e0d677f0f0886!2sINGELEC%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1598749815799!5m2!1ses-419!2sar"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
                         </div>
-                        <!-- Motivo -->
-                        <label>Motivo</label>
-                        <select class="browser-default custom-select mb-4">
-                            <option value="" disabled>Elija una opción</option>
-                            <option value="pres">Presupuestos y/o Cotizaciones</option>
-                            <option value="pagos">Medios de Pago</option>
-                            <option value="disp">Disponibilidad de Insumos</option>
-                            <option value="otros">Otros</option>
-                        </select>
-                        <!-- Message -->
-                        <div class="form-group">
-                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="8"
-                                placeholder="Escriba aqui su consulta"></textarea>
-                        </div>
-                        <!-- Copy -->
-                        <div class="custom-control custom-checkbox mb-4">
-                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                            <label class="custom-control-label" for="defaultContactFormCopy">¿Acepta recibir el
-                                Newsletter? </label>
-                        </div>
-                        <!-- Send button -->
-                        <button class="btn btn-info btn-block bg-primary form-control" type="reset">Restablecer</button>
-                        <button class="btn btn-info btn-block bg-primary form-control" type="submit">Enviar</button>
-                </div>
-                <div class="col-10 col-md-7 col-xl-6 mx-auto p-3 animate__animated animate__zoomIn animate__delay-1s">
-                    <h3>Donde estamos?</h3>
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13712.903080721304!2d-57.995832!3d-30.7682423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7e0d677f0f0886!2sINGELEC%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1598749815799!5m2!1ses-419!2sar"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-6 text-center text-md-left">
-                        <a class="navbar-brand img-fluid" href="../index.html"><img src="../img/logoIngelecblanco1px.svg" height="40"
-                            class="animate__animated animate__zoomIn animate__fast" alt=""></a>
+                        <a class="navbar-brand img-fluid" href="../index.html"><img
+                                src="../img/logoIngelecblanco1px.svg" height="40"
+                                class="animate__animated animate__zoomIn animate__fast" alt=""></a>
                         <p>Equipamientos eléctricos industriales.</p>
                         <div class="d-flex justify-content-center justify-content-md-start align-items-start">
                             <i class="fas fas fa-map-marker-alt mr-3" style="font-size: 3rem;"></i>
@@ -152,16 +164,20 @@
                     <hr class="clearfix w-100 d-md-none">
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <ul class="navFooter">
-                            <li><h5>LINKS</h5></li>
+                            <li>
+                                <h5>LINKS</h5>
+                            </li>
                             <li><a href="../index.html"><i class="fas fa-angle-right mr-2"></i>Inicio</a></li>
                             <li><a href="laEmpresa.html"><i class="fas fa-angle-right mr-2"></i>La Empresa</a></li>
-                            <li><a href="nuestroTrabajo/index.html"><i class="fas fa-angle-right mr-2"></i>Nuestro Trabajo</a></li>
+                            <li><a href="nuestroTrabajo/index.html"><i class="fas fa-angle-right mr-2"></i>Nuestro
+                                    Trabajo</a></li>
                             <li><a href="insumos.html"><i class="fas fa-angle-right mr-2"></i>Insumos</a></li>
                             <li><a href="contacto.html"><i class="fas fa-angle-right mr-2"></i>Contacto</a></li>
                         </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none">
-                    <div class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
+                    <div
+                        class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
                         <ul>
                             <li>
                                 <h5 class="text-uppercase font-weight-bold">Contacto</h5>
@@ -170,7 +186,8 @@
                                 <p><i class="fas fa-phone mr-2" style="font-size: 1.2rem;"></i>+549-3456-422796</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com</p>
+                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com
+                                </p>
                             </li>
                         </ul>
                     </div>

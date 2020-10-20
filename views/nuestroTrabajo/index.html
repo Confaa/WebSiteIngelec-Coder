@@ -20,59 +20,64 @@
 </head>
 
 <body>
-    <div class="container-fluid grilla">
-        <header class="sticky-top container-fluid">
-            <nav class="navbar navbar-expand-md bg-light navbar-light">
-                <a class="navbar-brand" class="menuLink img-fluid" href="../../index.html"><img
-                        src="../../img/logoIngelec.svg" height="50"
-                        class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a class="menuLink" href="../../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="../laEmpresa.html">La Empresa</a>
-                        </li>
-                        <!--SOLO CON MENU MOBILE-->
-                        <li class="dropdown d-md-none">
-                            <a class="menuLink dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nuestro
-                                Trabajo </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="obraChajari.html">Obra Chajarí</a>
-                                <!-- ver target="__blanck"-->
-                                <a class="dropdown-item" href="obraMercedes.html">Obra Mercedes</a>
-                                <a class="dropdown-item" href="obraYahape.html">Obra Yahape</a>
-                            </div>
-                        </li>
-                        <!------------------------->
-                        <!--SOLO CON MENU COMPLETO-->
-                        <li class="bg-dark"><a class="menuLink d-none d-md-block dropdown-toggle active"
-                                href="index.html">Nuestro Trabajo</a>
-                            <ul class="d-none d-md-block subMenu">
-                                <li><a class="menuLink" href="obraChajari.html">Obra Chajarí</a></li>
-                                <li><a class="menuLink" href="obraMercedes.html">Obra Mercedes</a></li>
-                                <li><a class="menuLink" href="obraYahape.html">Obra Yahape</a></li>
-                            </ul>
-                        </li>
-                        <!------------------------->
-                        <li>
-                            <a class="menuLink" href="../insumos.html">Insumos</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="../contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="grilla">
+        <header class="sticky-top">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-light navbar-light">
+                    <a class="navbar-brand" class="menuLink img-fluid" href="../../index.html"><img
+                            src="../../img/logoIngelec.svg" height="50"
+                            class="animate__animated animate__fadeInLeft animate__fast" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="menuLink" href="../../index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="menuLink" href="../laEmpresa.html">La Empresa</a>
+                            </li>
+                            <!--SOLO CON MENU MOBILE-->
+                            <li class="dropdown d-md-none">
+                                <a class="menuLink dropdown-toggle" href="index.html" id="navbarDropdownMenuLink"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Nuestro
+                                    Trabajo </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="obraChajari.html">Obra Chajarí</a>
+                                    <!-- ver target="__blanck"-->
+                                    <a class="dropdown-item" href="obraMercedes.html">Obra Mercedes</a>
+                                    <a class="dropdown-item" href="obraYahape.html">Obra Yahape</a>
+                                </div>
+                            </li>
+                            <!------------------------->
+                            <!--SOLO CON MENU COMPLETO-->
+                            <li class="bg-dark"><a class="menuLink d-none d-md-block dropdown-toggle active"
+                                    href="index.html">Nuestro Trabajo</a>
+                                <ul class="d-none d-md-block subMenu">
+                                    <li><a class="menuLink" href="obraChajari.html">Obra Chajarí</a></li>
+                                    <li><a class="menuLink" href="obraMercedes.html">Obra Mercedes</a></li>
+                                    <li><a class="menuLink" href="obraYahape.html">Obra Yahape</a></li>
+                                </ul>
+                            </li>
+                            <!------------------------->
+                            <li>
+                                <a class="menuLink" href="../insumos.html">Insumos</a>
+                            </li>
+                            <li>
+                                <a class="menuLink" href="../contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Nuestro Trabajo - Ingelec S.R.L.</h1>
-            <div class="container">
+            <div class="container-fluid">
+                <h1>Nuestro Trabajo - Ingelec S.R.L.</h1>
+
                 <div class="row pt-5 pb-5">
                     <div class="col-8 col-lg-4 obra mx-auto mb-5 animate__animated animate__backInLeft"><a
                             href="obraChajari.html">
@@ -93,11 +98,12 @@
             </div>
         </main>
         <footer>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-6 text-center text-md-left">
-                        <a class="navbar-brand img-fluid" href="../../index.html"><img src="../../img/logoIngelecblanco1px.svg" height="40"
-                            class="animate__animated animate__zoomIn animate__fast" alt=""></a>
+                        <a class="navbar-brand img-fluid" href="../../index.html"><img
+                                src="../../img/logoIngelecblanco1px.svg" height="40"
+                                class="animate__animated animate__zoomIn animate__fast" alt=""></a>
                         <p>Equipamientos eléctricos industriales.</p>
                         <div class="d-flex justify-content-center justify-content-md-start align-items-start">
                             <i class="fas fas fa-map-marker-alt mr-3" style="font-size: 3rem;"></i>
@@ -110,7 +116,9 @@
                     <hr class="clearfix w-100 d-md-none">
                     <div class="col-12 col-md-3 text-center text-md-left">
                         <ul class="navFooter">
-                            <li><h5>LINKS</h5></li>
+                            <li>
+                                <h5>LINKS</h5>
+                            </li>
                             <li><a href="../../index.html"><i class="fas fa-angle-right mr-2"></i>Inicio</a></li>
                             <li><a href="../laEmpresa.html"><i class="fas fa-angle-right mr-2"></i>La Empresa</a></li>
                             <li><a href="index.html"><i class="fas fa-angle-right mr-2"></i>Nuestro Trabajo</a></li>
@@ -119,7 +127,8 @@
                         </ul>
                     </div>
                     <hr class="clearfix w-100 d-md-none">
-                    <div class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
+                    <div
+                        class="col-12 col-md-4 col-lg-3 text-center text-md-left d-flex flex-column align-items-lg-end">
                         <ul>
                             <li>
                                 <h5 class="text-uppercase font-weight-bold">Contacto</h5>
@@ -128,7 +137,8 @@
                                 <p><i class="fas fa-phone mr-2" style="font-size: 1.2rem;"></i>+549-3456-422796</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com</p>
+                                <p><i class="fas fa-envelope mr-2" style="font-size: 1.2rem;"></i>ingelecsrl01@gmail.com
+                                </p>
                             </li>
                         </ul>
                     </div>
