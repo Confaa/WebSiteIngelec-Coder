@@ -5,21 +5,30 @@ main {
     .container-fluid {
         @include lateralsPaddings(0, 0);
     }
+    .row {
+        margin: 0;
+
+        > div {
+            @include lateralsPaddings(0, 0);
+        }
+    }
     .somos {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
         background-color: $inicio-gradiente-footer;
         color: white;
         text-align: center;
+        padding: 1rem;
         h2 {
             letter-spacing: 0.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 3rem;
         }
         p {
             margin-bottom: 0.5rem;
+            @include lateralsPaddings(2rem, 2rem);
         }
     }
 
@@ -28,16 +37,15 @@ main {
         padding-bottom: 8rem;
         background-color: $sectionIcons;
 
-        > h3 {
+        h2 {
             text-align: center;
             color: $efecto-hover;
             padding-bottom: 4rem;
             font-style: italic;
             font-size: 4rem;
         }
-        > div.row {
+        div.row {
             align-items: center;
-            @include lateralsPaddings(1rem, 1rem);
             margin-bottom: 5rem;
         }
         span {
@@ -57,7 +65,6 @@ main {
             border-radius: 50%;
             margin: 5px;
         }
-
         .iconText {
             color: white;
             font-size: 3rem;

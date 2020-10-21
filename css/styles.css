@@ -152,35 +152,42 @@ main .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
+main .row {
+  margin: 0; }
+  main .row > div {
+    padding-left: 0;
+    padding-right: 0; }
+
 main .somos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   background-color: #2871cc;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem; }
   main .somos h2 {
     letter-spacing: 0.5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem; }
   main .somos p {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
 
 main #rubros {
   padding-top: 2rem;
   padding-bottom: 8rem;
   background-color: black; }
-  main #rubros > h3 {
+  main #rubros h2 {
     text-align: center;
     color: #ff9900;
     padding-bottom: 4rem;
     font-style: italic;
     font-size: 4rem; }
-  main #rubros > div.row {
+  main #rubros div.row {
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin-bottom: 5rem; }
   main #rubros span {
     display: flex;
