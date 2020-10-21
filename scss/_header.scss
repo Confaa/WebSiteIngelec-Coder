@@ -1,17 +1,21 @@
 @import "colors";
+@import "mixins";
 
 header {
-    border-bottom: solid .2rem $color-detalles;
+    .container-fluid {
+        @include lateralsPaddings(0, 0);
+    }
+    border-bottom: solid 0.2rem $color-detalles;
     background-color: white;
     li:hover {
         background-color: $efecto-hover;
-        transition: all .35s;
+        transition: all 0.35s;
     }
 
     a:hover {
         color: $white;
         text-decoration: none;
-        transition: all .35s;
+        transition: all 0.35s;
     }
 
     .navbar {
@@ -27,7 +31,7 @@ header {
     li {
         position: relative;
 
-        >ul {
+        > ul {
             position: absolute;
             box-sizing: content-box;
             max-height: 0;
@@ -41,12 +45,12 @@ header {
         }
     }
 
-    li:hover>ul {
+    li:hover > ul {
         display: block;
         max-height: 300px;
         width: 100%;
         list-style: none;
-        transition: all .6s;
+        transition: all 0.6s;
     }
 }
 
@@ -55,7 +59,7 @@ header {
     color: black;
     display: block;
     font-weight: 400;
-    font-size: .99rem;
+    font-size: 0.99rem;
     padding: 1.2rem 0.9rem;
 }
 

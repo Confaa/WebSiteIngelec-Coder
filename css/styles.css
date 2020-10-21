@@ -3,13 +3,16 @@
 header {
   border-bottom: solid 0.2rem #003f9a;
   background-color: white; }
+  header .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
   header li:hover {
     background-color: #ff9900;
-    transition: all .35s; }
+    transition: all 0.35s; }
   header a:hover {
     color: #fff;
     text-decoration: none;
-    transition: all .35s; }
+    transition: all 0.35s; }
   header .navbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -34,14 +37,14 @@ header {
     max-height: 300px;
     width: 100%;
     list-style: none;
-    transition: all .6s; }
+    transition: all 0.6s; }
 
 .menuLink {
   text-decoration: none;
   color: black;
   display: block;
   font-weight: 400;
-  font-size: .99rem;
+  font-size: 0.99rem;
   padding: 1.2rem 0.9rem; }
 
 .subMenu {
@@ -148,68 +151,121 @@ footer {
 
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
-main .container-fluid {
-  padding-left: 0;
-  padding-right: 0; }
-
-main .row {
-  margin: 0; }
-  main .row > div {
+main {
+  /*MEDIA QUERIES*/ }
+  main .container-fluid {
     padding-left: 0;
     padding-right: 0; }
-
-main .somos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #2871cc;
-  color: white;
-  text-align: center;
-  padding: 1rem; }
-  main .somos h2 {
-    letter-spacing: 0.5rem;
-    margin-bottom: 2rem;
-    font-size: 3rem; }
-  main .somos p {
-    margin-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem; }
-
-main #rubros {
-  padding-top: 2rem;
-  padding-bottom: 8rem;
-  background-color: black; }
-  main #rubros h2 {
-    text-align: center;
-    color: #ff9900;
-    padding-bottom: 4rem;
-    font-style: italic;
-    font-size: 4rem; }
-  main #rubros div.row {
+  main .row {
+    margin: 0; }
+    main .row > div {
+      padding-left: 0;
+      padding-right: 0; }
+  main .somos {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem; }
-  main #rubros span {
-    display: flex;
-    justify-content: center; }
-  main #rubros .iconIndex {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    background-color: #2871cc;
+    color: white;
+    text-align: center;
+    padding: 1rem; }
+    main .somos h2 {
+      letter-spacing: 0.5rem; }
+    main .somos p, main .somos h5 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+  main #rubros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: black; }
+    main #rubros h2 {
+      text-align: center;
+      color: #ff9900;
+      font-style: italic; }
+    main #rubros p {
+      color: white; }
+    main #rubros div.row {
+      align-items: center; }
+    main #rubros span {
+      display: flex;
+      justify-content: center; }
+    main #rubros .iconIndex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: #003f9a;
+      color: #fff;
+      border-radius: 50%; }
+    main #rubros .iconText {
+      color: white;
+      font-weight: 700;
+      font-style: italic; }
+
+@media (max-width: 767.98px) {
+  .somos h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem; }
+  .somos p, .somos h5 {
+    font-size: 1rem; }
+  #rubros div.row {
+    margin-bottom: 2rem; }
+  #rubros .iconIndex {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+    margin: 1rem; }
+  #rubros .iconText {
+    font-size: 1.5rem;
+    text-align: center; }
+  #rubros p {
+    text-align: center; }
+  #rubros h2 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .somos h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem; }
+  .somos p, .somos h5 {
+    font-size: 1rem; }
+  #rubros div.row {
+    margin-bottom: 2rem; }
+  #rubros .iconIndex {
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    margin: 1.5rem; }
+  #rubros .iconText {
+    font-size: 2rem;
+    text-align: center; }
+  #rubros p {
+    text-align: center; }
+  #rubros h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem; } }
+
+@media (min-width: 992px) {
+  .somos h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; }
+  .somos p, .somos h5 {
+    font-size: 1.3rem; }
+  #rubros div.row {
+    margin-bottom: 4rem; }
+  #rubros .iconIndex {
     width: 12rem;
     height: 12rem;
-    padding: 0.5rem;
-    font-size: 6rem;
-    background-color: #003f9a;
-    color: #fff;
-    border-radius: 50%;
-    margin: 5px; }
-  main #rubros .iconText {
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 6rem; }
+  #rubros .iconText {
+    font-size: 2.5rem; }
+  #rubros p {
     text-align: left; }
+  #rubros h2 {
+    font-size: 4.5rem;
+    padding-bottom: 4rem; } }
 
 /*GENERALES*/
 * {
