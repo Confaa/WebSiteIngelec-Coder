@@ -5,164 +5,171 @@ main {
     .container-fluid {
         @include lateralsPaddings(0, 0);
     }
-    .row {
-        margin: 0;
+    #index {
+        .row {
+            margin: 0;
 
-        > div {
-            @include lateralsPaddings(0, 0);
+            > div {
+                @include lateralsPaddings(0, 0);
+            }
         }
-    }
-    .somos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $inicio-gradiente-footer;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        h2 {
-            letter-spacing: 0.5rem;
-        }
-        p, h5 {
-            @include lateralsPaddings(1.5rem, 1.5rem);
-        }
-    }
-
-    #rubros {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background-color: $sectionIcons;
-
-        h2 {
-            text-align: center;
-            color: $efecto-hover;
-            font-style: italic;
-        }
-        p {
-            color: white;
-        }
-        div.row {
-            align-items: center;
-        }
-        span {
+        .somos {
             display: flex;
-            justify-content: center;
-        }
-        .iconIndex {
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 0.5rem;
-            background-color: $color-detalles;
-            color: #fff;
-            border-radius: 50%;
-        }
-        .iconText {
+            justify-content: center;
+            background-color: $inicio-gradiente-footer;
             color: white;
-            font-weight: 700;
-            font-style: italic;
+            text-align: center;
+            padding: 1rem;
+            h2 {
+                letter-spacing: 0.5rem;
+            }
+            p,
+            h5 {
+                @include lateralsPaddings(1.5rem, 1.5rem);
+            }
         }
-    }
-    /*MEDIA QUERIES*/
-}
 
-@include media-breakpoint-between(xs, md) {
-    .somos {
-        h2 {
-            margin-bottom: 1rem;
-            font-size: 1.7rem;
-        }
-        p, h5 {
-            font-size: 1rem;
-        }
-    }
-    #rubros {
-        div.row {
-            margin-bottom: 2rem;
-        }
-        .iconIndex {
-            width: 7rem;
-            height: 7rem;
-            font-size: 3rem;
-            margin: 1rem;
-        }
-        .iconText {
-            font-size: 1.5rem;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-        h2 {
-            font-size: 3rem;
-            padding-bottom: 1.5rem;
-        }
-    }
-}
-
-@include media-breakpoint-between(md, lg) {
-    .somos {
-        h2 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-        p, h5 {
-            font-size: 1rem;
-        }
-    }
-    #rubros {
-        div.row {
-            margin-bottom: 2rem;
-        }
-        .iconIndex {
-            width: 8rem;
-            height: 8rem;
-            font-size: 4rem;
-            margin: 1.5rem;
-        }
-        .iconText {
-            font-size: 2rem;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-        h2 {
-            font-size: 4rem;
+        #rubros {
+            padding-top: 2rem;
             padding-bottom: 2rem;
-        }
-    }
-}
+            background-color: $sectionIcons;
 
-@include media-breakpoint-up(lg) {
-    .somos {
-        h2 {
-            margin-bottom: 1.5rem;
-            font-size: 2.5rem;
-        }
-        p, h5 {
-            font-size: 1.3rem;
+            h2 {
+                text-align: center;
+                color: $efecto-hover;
+                font-style: italic;
+            }
+            p {
+                color: white;
+            }
+            div.row {
+                align-items: center;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+            }
+            .iconIndex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem;
+                background-color: $color-detalles;
+                color: #fff;
+                border-radius: 50%;
+            }
+            .iconText {
+                color: white;
+                font-weight: 700;
+                font-style: italic;
+            }
         }
     }
-    #rubros {
-        div.row {
-            margin-bottom: 4rem;
+
+    /*MEDIA QUERIES*/
+
+    @include media-breakpoint-between(xs, md) {
+        .somos {
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 1.7rem;
+            }
+            p,
+            h5 {
+                font-size: 1rem;
+            }
         }
-        .iconIndex {
-            width: 12rem;
-            height: 12rem;
-            font-size: 6rem;
+        #rubros {
+            div.row {
+                margin-bottom: 2rem;
+            }
+            .iconIndex {
+                width: 7rem;
+                height: 7rem;
+                font-size: 3rem;
+                margin: 1rem;
+            }
+            .iconText {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            h2 {
+                font-size: 3rem;
+                padding-bottom: 1.5rem;
+            }
         }
-        .iconText {
-            font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        .somos {
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+            p,
+            h5 {
+                font-size: 1rem;
+            }
         }
-        p {
-            text-align: left;
+        #rubros {
+            div.row {
+                margin-bottom: 2rem;
+            }
+            .iconIndex {
+                width: 8rem;
+                height: 8rem;
+                font-size: 4rem;
+                margin: 1.5rem;
+            }
+            .iconText {
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            h2 {
+                font-size: 4rem;
+                padding-bottom: 2rem;
+            }
         }
-        h2 {
-            font-size: 4.5rem;
-            padding-bottom: 4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .somos {
+            h2 {
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+            }
+            p,
+            h5 {
+                font-size: 1.3rem;
+            }
+        }
+        #rubros {
+            div.row {
+                margin-bottom: 4rem;
+            }
+            .iconIndex {
+                width: 12rem;
+                height: 12rem;
+                font-size: 6rem;
+            }
+            .iconText {
+                font-size: 2.5rem;
+            }
+            p {
+                text-align: left;
+            }
+            h2 {
+                font-size: 4.5rem;
+                padding-bottom: 4rem;
+            }
         }
     }
 }

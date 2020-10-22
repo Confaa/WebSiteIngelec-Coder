@@ -1,0 +1,13 @@
+@import "colors";
+@import "mixins";
+
+#insumos {
+    background-color:$celeste-claro;
+    .baseInsumos {
+        
+        .customMarcas {
+            padding: 2.5rem;
+            
+        }
+    }
+}

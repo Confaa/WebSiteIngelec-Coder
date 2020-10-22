@@ -1,12 +1,23 @@
 @import "../frameworks/bootstrap-main/scss/functions";
 @import "../frameworks/bootstrap-main/scss/variables";
 @import "../frameworks/bootstrap-main/scss/mixins/breakpoints";
-@import "header";
+
 @import "mixins";
 @import "bucles";
 @import "colors";
-@import "footer";
+
+/*Header*/
+@import "header";
+/*----------*/
+/*Main's de cada seccion*/
+@import "contacto";
 @import "index";
+@import "insumos";
+@import "laEmpresa";
+/*----------*/
+/*Header*/
+@import "footer";
+/*----------*/
 
 /*GENERALES*/
 * {
@@ -15,9 +26,12 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
+body {
+    color: white;
+}
 /*---------------------------------*/
 
 main {
@@ -50,27 +64,10 @@ div.obra {
     min-height: 100vh;
 }
 
-
-
-.carousel-indicators>li {
+.carousel-indicators > li {
     border-radius: 100%;
     height: 0.8rem;
     width: 0.8rem;
-}
-
-
-.margenes {
-    margin: 2rem
-}
-
-.customMarcas {
-    padding: 3rem;
-}
-
-.form-control:focus {
-    border-color: $efecto-hover;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fd7e14;
-    /*averiguar box-shadow;*/
 }
 
 .obra {
@@ -87,9 +84,9 @@ div.obra {
 #galeria {
     div {
         height: 155px;
-        margin-top: .75rem;
-        margin-bottom: .75rem;
-        @include lateralsPaddings(.75rem, .75rem);
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        @include lateralsPaddings(0.75rem, 0.75rem);
         overflow: hidden;
     }
 
@@ -101,9 +98,8 @@ div.obra {
 /*MEDIA QUERIES*/
 
 @include media-breakpoint-between(xs, sm) {
-
     .customMarcas {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     h1 {
@@ -112,7 +108,6 @@ div.obra {
 }
 
 @include media-breakpoint-between(sm, md) {
-
     .customMarcas {
         padding: 2rem;
     }
@@ -130,7 +125,7 @@ div.obra {
 
 @include media-breakpoint-between(md, lg) {
     .customMarcas {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     #galeria {
@@ -138,7 +133,6 @@ div.obra {
             height: 115px;
         }
     }
-
 }
 
 @include media-breakpoint-between(lg, xl) {
@@ -158,5 +152,3 @@ div.obra {
 }
 
 /*----------------------------------------------*/
-
-
