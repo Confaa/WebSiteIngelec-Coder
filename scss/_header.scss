@@ -2,6 +2,13 @@
 @import "mixins";
 
 header {
+    i{
+        padding-left: .5rem;
+        font-size: 1rem;
+    }
+    button{
+        background-color: red;
+    }
     .container-fluid {
         @include lateralsPaddings(0, 0);
     }
