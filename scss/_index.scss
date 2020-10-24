@@ -67,109 +67,109 @@ main {
             }
         }
     }
+}
 
-    /*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
 
-    @include media-breakpoint-between(xs, md) {
-        .somos {
-            h2 {
-                margin-bottom: 1rem;
-                font-size: 1.7rem;
-            }
-            p,
-            h5 {
-                font-size: 1rem;
-            }
+@include media-breakpoint-between(xs, md) {
+    .somos {
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
         }
-        #rubros {
-            div.row {
-                margin-bottom: 2rem;
-            }
-            .iconIndex {
-                width: 7rem;
-                height: 7rem;
-                font-size: 3rem;
-                margin: 1rem;
-            }
-            .iconText {
-                font-size: 1.5rem;
-                text-align: center;
-            }
-            p {
-                text-align: center;
-            }
-            h2 {
-                font-size: 3rem;
-                padding-bottom: 1.5rem;
-            }
+        p,
+        h5 {
+            font-size: 1rem;
         }
     }
-
-    @include media-breakpoint-between(md, lg) {
-        .somos {
-            h2 {
-                margin-bottom: 1rem;
-                font-size: 2rem;
-            }
-            p,
-            h5 {
-                font-size: 1rem;
-            }
+    #rubros {
+        div.row {
+            margin-bottom: 2rem;
         }
-        #rubros {
-            div.row {
-                margin-bottom: 2rem;
-            }
-            .iconIndex {
-                width: 8rem;
-                height: 8rem;
-                font-size: 4rem;
-                margin: 1.5rem;
-            }
-            .iconText {
-                font-size: 2rem;
-                text-align: center;
-            }
-            p {
-                text-align: center;
-            }
-            h2 {
-                font-size: 4rem;
-                padding-bottom: 2rem;
-            }
+        .iconIndex {
+            width: 7rem;
+            height: 7rem;
+            font-size: 3rem;
+            margin: 1rem;
+        }
+        .iconText {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h2 {
+            font-size: 3rem;
+            padding-bottom: 1.5rem;
         }
     }
+}
 
-    @include media-breakpoint-up(lg) {
-        .somos {
-            h2 {
-                margin-bottom: 1.5rem;
-                font-size: 2.5rem;
-            }
-            p,
-            h5 {
-                font-size: 1.3rem;
-            }
+@include media-breakpoint-between(md, lg) {
+    .somos {
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
         }
-        #rubros {
-            div.row {
-                margin-bottom: 4rem;
-            }
-            .iconIndex {
-                width: 12rem;
-                height: 12rem;
-                font-size: 6rem;
-            }
-            .iconText {
-                font-size: 2.5rem;
-            }
-            p {
-                text-align: left;
-            }
-            h2 {
-                font-size: 4.5rem;
-                padding-bottom: 4rem;
-            }
+        p,
+        h5 {
+            font-size: 1rem;
+        }
+    }
+    #rubros {
+        div.row {
+            margin-bottom: 2rem;
+        }
+        .iconIndex {
+            width: 8rem;
+            height: 8rem;
+            font-size: 4rem;
+            margin: 1.5rem;
+        }
+        .iconText {
+            font-size: 2rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h2 {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .somos {
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        p,
+        h5 {
+            font-size: 1.3rem;
+        }
+    }
+    #rubros {
+        div.row {
+            margin-bottom: 4rem;
+        }
+        .iconIndex {
+            width: 12rem;
+            height: 12rem;
+            font-size: 6rem;
+        }
+        .iconText {
+            font-size: 2.5rem;
+        }
+        p {
+            text-align: left;
+        }
+        h2 {
+            font-size: 4.5rem;
+            padding-bottom: 4rem;
         }
     }
 }

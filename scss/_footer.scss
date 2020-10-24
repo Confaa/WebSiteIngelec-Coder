@@ -3,7 +3,7 @@
 
 footer {
 
-    background-image: linear-gradient(to bottom, $inicio-gradiente-footer, $color-detalles);
+    background:$color-detalles;
 
     .container{
         @include lateralsPaddings(0rem, 0rem);

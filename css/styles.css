@@ -127,122 +127,127 @@ main #contacto .form-control:focus {
 
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
-main {
-  /*MEDIA QUERIES*/ }
-  main .container-fluid {
+main .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+main #index .row {
+  margin: 0; }
+  main #index .row > div {
     padding-left: 0;
     padding-right: 0; }
-  main #index .row {
-    margin: 0; }
-    main #index .row > div {
-      padding-left: 0;
-      padding-right: 0; }
-  main #index .somos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #2871cc;
-    color: white;
+
+main #index .somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2871cc;
+  color: white;
+  text-align: center;
+  padding: 1rem; }
+  main #index .somos h2 {
+    letter-spacing: 0.5rem; }
+  main #index .somos p,
+  main #index .somos h5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+main #index #rubros {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: black; }
+  main #index #rubros h2 {
     text-align: center;
-    padding: 1rem; }
-    main #index .somos h2 {
-      letter-spacing: 0.5rem; }
-    main #index .somos p,
-    main #index .somos h5 {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; }
-  main #index #rubros {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: black; }
-    main #index #rubros h2 {
-      text-align: center;
-      color: #ff9900;
-      font-style: italic; }
-    main #index #rubros p {
-      color: white; }
-    main #index #rubros div.row {
-      align-items: center; }
-    main #index #rubros span {
-      display: flex;
-      justify-content: center; }
-    main #index #rubros .iconIndex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem;
-      background-color: #003f9a;
-      color: #fff;
-      border-radius: 50%; }
-    main #index #rubros .iconText {
-      color: white;
-      font-weight: 700;
-      font-style: italic; }
-  @media (max-width: 767.98px) {
-    main .somos h2 {
-      margin-bottom: 1rem;
-      font-size: 1.7rem; }
-    main .somos p,
-    main .somos h5 {
-      font-size: 1rem; }
-    main #rubros div.row {
-      margin-bottom: 2rem; }
-    main #rubros .iconIndex {
-      width: 7rem;
-      height: 7rem;
-      font-size: 3rem;
-      margin: 1rem; }
-    main #rubros .iconText {
-      font-size: 1.5rem;
-      text-align: center; }
-    main #rubros p {
-      text-align: center; }
-    main #rubros h2 {
-      font-size: 3rem;
-      padding-bottom: 1.5rem; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    main .somos h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem; }
-    main .somos p,
-    main .somos h5 {
-      font-size: 1rem; }
-    main #rubros div.row {
-      margin-bottom: 2rem; }
-    main #rubros .iconIndex {
-      width: 8rem;
-      height: 8rem;
-      font-size: 4rem;
-      margin: 1.5rem; }
-    main #rubros .iconText {
-      font-size: 2rem;
-      text-align: center; }
-    main #rubros p {
-      text-align: center; }
-    main #rubros h2 {
-      font-size: 4rem;
-      padding-bottom: 2rem; } }
-  @media (min-width: 992px) {
-    main .somos h2 {
-      margin-bottom: 1.5rem;
-      font-size: 2.5rem; }
-    main .somos p,
-    main .somos h5 {
-      font-size: 1.3rem; }
-    main #rubros div.row {
-      margin-bottom: 4rem; }
-    main #rubros .iconIndex {
-      width: 12rem;
-      height: 12rem;
-      font-size: 6rem; }
-    main #rubros .iconText {
-      font-size: 2.5rem; }
-    main #rubros p {
-      text-align: left; }
-    main #rubros h2 {
-      font-size: 4.5rem;
-      padding-bottom: 4rem; } }
+    color: #ff9900;
+    font-style: italic; }
+  main #index #rubros p {
+    color: white; }
+  main #index #rubros div.row {
+    align-items: center; }
+  main #index #rubros span {
+    display: flex;
+    justify-content: center; }
+  main #index #rubros .iconIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #003f9a;
+    color: #fff;
+    border-radius: 50%; }
+  main #index #rubros .iconText {
+    color: white;
+    font-weight: 700;
+    font-style: italic; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 767.98px) {
+  .somos h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem; }
+  .somos p,
+  .somos h5 {
+    font-size: 1rem; }
+  #rubros div.row {
+    margin-bottom: 2rem; }
+  #rubros .iconIndex {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+    margin: 1rem; }
+  #rubros .iconText {
+    font-size: 1.5rem;
+    text-align: center; }
+  #rubros p {
+    text-align: center; }
+  #rubros h2 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .somos h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem; }
+  .somos p,
+  .somos h5 {
+    font-size: 1rem; }
+  #rubros div.row {
+    margin-bottom: 2rem; }
+  #rubros .iconIndex {
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    margin: 1.5rem; }
+  #rubros .iconText {
+    font-size: 2rem;
+    text-align: center; }
+  #rubros p {
+    text-align: center; }
+  #rubros h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem; } }
+
+@media (min-width: 992px) {
+  .somos h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; }
+  .somos p,
+  .somos h5 {
+    font-size: 1.3rem; }
+  #rubros div.row {
+    margin-bottom: 4rem; }
+  #rubros .iconIndex {
+    width: 12rem;
+    height: 12rem;
+    font-size: 6rem; }
+  #rubros .iconText {
+    font-size: 2.5rem; }
+  #rubros p {
+    text-align: left; }
+  #rubros h2 {
+    font-size: 4.5rem;
+    padding-bottom: 4rem; } }
 
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
@@ -251,12 +256,15 @@ main {
   #insumos .baseInsumos .customMarcas {
     padding: 2.5rem; }
 
+main #laEmpresa {
+  font-size: 1rem; }
+
 /*----------*/
 /*Header*/
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
 footer {
-  background-image: linear-gradient(to bottom, #2871cc, #003f9a); }
+  background: #003f9a; }
   footer .container {
     padding-left: 0rem;
     padding-right: 0rem; }
