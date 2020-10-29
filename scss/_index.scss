@@ -13,21 +13,25 @@ main {
                 @include lateralsPaddings(0, 0);
             }
         }
-        .somos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: $inicio-gradiente-footer;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            h2 {
-                letter-spacing: 0.5rem;
-            }
-            p,
-            h5 {
-                @include lateralsPaddings(1.5rem, 1.5rem);
+        section {
+            background-color: $azul-ingelec;
+
+            .textSomos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $azul-ingelec;
+                color: white;
+                text-align: center;
+                padding: 1rem;
+                h2 {
+                    letter-spacing: 0.5rem;
+                }
+                p,
+                h5 {
+                    @include lateralsPaddings(1.5rem, 1.5rem);
+                }
             }
         }
 
@@ -72,7 +76,7 @@ main {
 /*MEDIA QUERIES*/
 
 @include media-breakpoint-between(xs, md) {
-    .somos {
+    .textSomos {
         h2 {
             margin-bottom: 1rem;
             font-size: 1.7rem;
@@ -107,7 +111,7 @@ main {
 }
 
 @include media-breakpoint-between(md, lg) {
-    .somos {
+    .textSomos {
         h2 {
             margin-bottom: 1rem;
             font-size: 2rem;
@@ -142,7 +146,7 @@ main {
 }
 
 @include media-breakpoint-up(lg) {
-    .somos {
+    .textSomos {
         h2 {
             margin-bottom: 1.5rem;
             font-size: 2.5rem;
