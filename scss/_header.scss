@@ -2,12 +2,14 @@
 @import "mixins";
 
 header {
-    i{
-        padding-left: .5rem;
+    i {
+        padding-left: 0.5rem;
         font-size: 1rem;
     }
-    button{
-        background-color: red;
+    .navbar-toggler {
+        padding: 0.6rem, 0.3rem;
+        background-color: $efecto-hover;
+        margin-right: 0.5rem;
     }
     .container-fluid {
         @include lateralsPaddings(0, 0);

@@ -66,10 +66,12 @@ header {
   border-bottom: solid 0.2rem #003f9a;
   background-color: white; }
   header i {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-size: 1rem; }
-  header button {
-    background-color: red; }
+  header .navbar-toggler {
+    padding: 0.6rem, 0.3rem;
+    background-color: #ff9900;
+    margin-right: 0.5rem; }
   header .container-fluid {
     padding-left: 0;
     padding-right: 0; }
