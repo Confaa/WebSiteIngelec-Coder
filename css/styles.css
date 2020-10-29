@@ -168,9 +168,21 @@ main #index #asistente {
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 1rem; }
-    main #index #asistente .row div {
-      text-align: center;
+    main #index #asistente .row > div {
       padding: 1rem; }
+      main #index #asistente .row > div h3 {
+        font-weight: bold; }
+      main #index #asistente .row > div ul {
+        font-size: 1.2rem;
+        list-style: none; }
+        main #index #asistente .row > div ul li {
+          display: flex;
+          align-items: center; }
+          main #index #asistente .row > div ul li i {
+            color: #ff9900;
+            margin-right: 1.5rem; }
+          main #index #asistente .row > div ul li p {
+            margin: 0; }
 
 main #index #rubros {
   padding-top: 2rem;
