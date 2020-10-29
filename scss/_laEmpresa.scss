@@ -1,15 +1,37 @@
 main {
     #laEmpresa {
         padding: 1rem 0;
+        h2 {
+            padding: 0.5rem;
+        }
         .row {
             margin: 0;
             p {
-                padding: 0.5rem 0;
+                padding: 0.5rem;
                 margin: 0;
                 font-size: 1.2rem;
             }
             img {
                 padding: 0;
+            }
+        }
+        /*MEDIA QUERIES*/
+
+        @include media-breakpoint-between(xs, md) {
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            h2 {
+                font-size: 2rem;
             }
         }
     }

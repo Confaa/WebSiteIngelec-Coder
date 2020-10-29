@@ -120,10 +120,22 @@ header {
 
 /*----------*/
 /*Main's de cada seccion*/
-main #contacto .form-control:focus {
-  border-color: #ff9900;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fd7e14;
-  /*averiguar box-shadow;*/ }
+main #contacto {
+  padding: 1rem; }
+  main #contacto .row {
+    padding: 1rem 0; }
+    main #contacto .row > div {
+      padding: 0.5rem; }
+    main #contacto .row form {
+      padding: 1rem; }
+      main #contacto .row form > div {
+        margin: 0;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem; }
+  main #contacto .form-control:focus {
+    border-color: #ff9900;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fd7e14;
+    /*averiguar box-shadow;*/ }
 
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
@@ -131,172 +143,190 @@ main .container-fluid {
   padding-left: 0;
   padding-right: 0; }
 
-main #index .row {
-  margin: 0; }
-  main #index .row > div {
-    padding-left: 0;
-    padding-right: 0; }
-
-main #index section {
-  background-color: #2871cc; }
-  main #index section .textSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #2871cc;
-    color: white;
-    text-align: center;
-    padding: 1rem; }
-    main #index section .textSomos h2 {
-      letter-spacing: 0.5rem; }
-    main #index section .textSomos p,
-    main #index section .textSomos h5 {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; }
-
-main #index #asistente {
-  /*Fondo*/
-  background: url(../img/fondo-asistente.jpg);
-  background-repeat: no-repeat;
-  background-position-y: initial;
-  background-position-x: center;
-  background-attachment: fixed;
-  background-size: cover;
-  /**/ }
-  main #index #asistente .row {
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2rem 1rem; }
-    main #index #asistente .row > div {
+main #index {
+  /*MEDIA QUERIES*/ }
+  main #index .row {
+    margin: 0; }
+    main #index .row > div {
+      padding-left: 0;
+      padding-right: 0; }
+  main #index section {
+    background-color: #2871cc; }
+    main #index section .textSomos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #2871cc;
+      color: white;
+      text-align: center;
       padding: 1rem; }
-      main #index #asistente .row > div h3 {
-        font-weight: bold; }
-      main #index #asistente .row > div ul {
-        font-size: 1.2rem;
-        list-style: none; }
-        main #index #asistente .row > div ul li {
-          display: flex;
-          align-items: center; }
-          main #index #asistente .row > div ul li i {
-            color: #ff9900;
-            margin-right: 1.5rem; }
-          main #index #asistente .row > div ul li p {
-            margin: 0; }
-
-main #index #rubros {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: black; }
-  main #index #rubros h2 {
-    text-align: center;
-    color: #ff9900;
-    font-style: italic; }
-  main #index #rubros p {
-    color: white; }
-  main #index #rubros div.row {
-    align-items: center; }
-  main #index #rubros span {
-    display: flex;
-    justify-content: center; }
-  main #index #rubros .iconIndex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    background-color: #003f9a;
-    color: #fff;
-    border-radius: 50%; }
-  main #index #rubros .iconText {
-    color: white;
-    font-weight: 700;
-    font-style: italic; }
-
-/*MEDIA QUERIES*/
-@media (max-width: 767.98px) {
-  .textSomos h2 {
-    margin-bottom: 1rem;
-    font-size: 1.7rem; }
-  .textSomos p,
-  .textSomos h5 {
-    font-size: 1rem; }
-  #rubros div.row {
-    margin-bottom: 2rem; }
-  #rubros .iconIndex {
-    width: 7rem;
-    height: 7rem;
-    font-size: 3rem;
-    margin: 1rem; }
-  #rubros .iconText {
-    font-size: 1.5rem;
-    text-align: center; }
-  #rubros p {
-    text-align: center; }
-  #rubros h2 {
-    font-size: 3rem;
-    padding-bottom: 1.5rem; } }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .textSomos h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem; }
-  .textSomos p,
-  .textSomos h5 {
-    font-size: 1rem; }
-  #rubros div.row {
-    margin-bottom: 2rem; }
-  #rubros .iconIndex {
-    width: 8rem;
-    height: 8rem;
-    font-size: 4rem;
-    margin: 1.5rem; }
-  #rubros .iconText {
-    font-size: 2rem;
-    text-align: center; }
-  #rubros p {
-    text-align: center; }
-  #rubros h2 {
-    font-size: 4rem;
-    padding-bottom: 2rem; } }
-
-@media (min-width: 992px) {
-  .textSomos h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem; }
-  .textSomos p,
-  .textSomos h5 {
-    font-size: 1.3rem; }
-  #rubros div.row {
-    margin-bottom: 4rem; }
-  #rubros .iconIndex {
-    width: 12rem;
-    height: 12rem;
-    font-size: 6rem; }
-  #rubros .iconText {
-    font-size: 2.5rem; }
-  #rubros p {
-    text-align: left; }
-  #rubros h2 {
-    font-size: 4.5rem;
-    padding-bottom: 4rem; } }
+      main #index section .textSomos h2 {
+        letter-spacing: 0.5rem; }
+      main #index section .textSomos p,
+      main #index section .textSomos h5 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; }
+  main #index #asistente {
+    /*Fondo*/
+    background: url(../img/fondo-asistente.jpg);
+    background-repeat: no-repeat;
+    background-position-y: initial;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /**/ }
+    main #index #asistente .row {
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 2rem 1rem; }
+      main #index #asistente .row > div {
+        padding: 1rem; }
+        main #index #asistente .row > div h3 {
+          font-weight: bold; }
+        main #index #asistente .row > div ul {
+          font-size: 1.2rem;
+          list-style: none; }
+          main #index #asistente .row > div ul li {
+            display: flex;
+            align-items: center; }
+            main #index #asistente .row > div ul li i {
+              color: #ff9900;
+              margin-right: 1.5rem; }
+            main #index #asistente .row > div ul li p {
+              margin: 0; }
+  main #index #rubros {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: black; }
+    main #index #rubros h2 {
+      text-align: center;
+      color: #ff9900;
+      font-style: italic; }
+    main #index #rubros p {
+      color: white; }
+    main #index #rubros div.row {
+      align-items: center; }
+    main #index #rubros span {
+      display: flex;
+      justify-content: center; }
+    main #index #rubros .iconIndex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      background-color: #003f9a;
+      color: #fff;
+      border-radius: 50%; }
+    main #index #rubros .iconText {
+      color: white;
+      font-weight: 700;
+      font-style: italic; }
+  @media (max-width: 767.98px) {
+    main #index .textSomos h2 {
+      margin-bottom: 1rem;
+      font-size: 1.7rem; }
+    main #index .textSomos p,
+    main #index .textSomos h5 {
+      font-size: 1rem; }
+    main #index #rubros div.row {
+      margin-bottom: 2rem; }
+    main #index #rubros .iconIndex {
+      width: 7rem;
+      height: 7rem;
+      font-size: 3rem;
+      margin: 1rem; }
+    main #index #rubros .iconText {
+      font-size: 1.5rem;
+      text-align: center; }
+    main #index #rubros p {
+      text-align: center; }
+    main #index #rubros h2 {
+      font-size: 3rem;
+      padding-bottom: 1.5rem; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    main #index .textSomos h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem; }
+    main #index .textSomos p,
+    main #index .textSomos h5 {
+      font-size: 1rem; }
+    main #index #rubros div.row {
+      margin-bottom: 2rem; }
+    main #index #rubros .iconIndex {
+      width: 8rem;
+      height: 8rem;
+      font-size: 4rem;
+      margin: 1.5rem; }
+    main #index #rubros .iconText {
+      font-size: 2rem;
+      text-align: center; }
+    main #index #rubros p {
+      text-align: center; }
+    main #index #rubros h2 {
+      font-size: 4rem;
+      padding-bottom: 2rem; } }
+  @media (min-width: 992px) {
+    main #index .textSomos h2 {
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem; }
+    main #index .textSomos p,
+    main #index .textSomos h5 {
+      font-size: 1.3rem; }
+    main #index #rubros div.row {
+      margin-bottom: 4rem; }
+    main #index #rubros .iconIndex {
+      width: 12rem;
+      height: 12rem;
+      font-size: 6rem; }
+    main #index #rubros .iconText {
+      font-size: 2.5rem; }
+    main #index #rubros p {
+      text-align: left; }
+    main #index #rubros h2 {
+      font-size: 4.5rem;
+      padding-bottom: 4rem; } }
 
 /*PALETA DE COLORES DE MI PAGINA*/
 /*---------------------------------*/
 #insumos {
-  background-color: #84c4fc; }
+  padding: 1rem 0;
+  background-color: #84c4fc;
+  /*MEDIA QUERIES*/ }
   #insumos .baseInsumos .customMarcas {
     padding: 2.5rem; }
+  @media (max-width: 767.98px) {
+    #insumos h2 {
+      font-size: 1.7rem; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #insumos h2 {
+      font-size: 2rem; } }
+  @media (min-width: 992px) {
+    #insumos h2 {
+      font-size: 2.5rem; } }
 
 main #laEmpresa {
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  /*MEDIA QUERIES*/ }
+  main #laEmpresa h2 {
+    padding: 0.5rem; }
   main #laEmpresa .row {
     margin: 0; }
     main #laEmpresa .row p {
-      padding: 0.5rem 0;
+      padding: 0.5rem;
       margin: 0;
       font-size: 1.2rem; }
     main #laEmpresa .row img {
       padding: 0; }
+  @media (max-width: 767.98px) {
+    main #laEmpresa h2 {
+      font-size: 1.7rem; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    main #laEmpresa h2 {
+      font-size: 2rem; } }
+  @media (min-width: 992px) {
+    main #laEmpresa h2 {
+      font-size: 2rem; } }
 
 /*----------*/
 /*Header*/

@@ -2,10 +2,31 @@
 @import "mixins";
 
 #insumos {
+    padding: 1rem 0;
     background-color: $color-fondo;
+
     .baseInsumos {
         .customMarcas {
             padding: 2.5rem;
+        }
+    }
+    /*MEDIA QUERIES*/
+
+    @include media-breakpoint-between(xs, md) {
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        h2 {
+            font-size: 2.5rem;
         }
     }
 }
