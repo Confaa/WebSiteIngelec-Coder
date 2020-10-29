@@ -34,7 +34,26 @@ main {
                 }
             }
         }
+        #asistente {
+            /*Fondo*/
+            background: url(../img/fondo-asistente.jpg);
+            background-repeat: no-repeat;
+            background-position-y: initial;
+            background-position-x: center;
+            background-attachment: fixed;
+            background-size: cover;
+            /**/
+            .row {
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 2rem 1rem;
 
+                div {
+                    text-align: center;
+                    padding: 1rem;
+                }
+            }
+        }
         #rubros {
             padding-top: 2rem;
             padding-bottom: 2rem;

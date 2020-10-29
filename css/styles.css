@@ -155,6 +155,23 @@ main #index section {
       padding-left: 1.5rem;
       padding-right: 1.5rem; }
 
+main #index #asistente {
+  /*Fondo*/
+  background: url(../img/fondo-asistente.jpg);
+  background-repeat: no-repeat;
+  background-position-y: initial;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /**/ }
+  main #index #asistente .row {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 1rem; }
+    main #index #asistente .row div {
+      text-align: center;
+      padding: 1rem; }
+
 main #index #rubros {
   padding-top: 2rem;
   padding-bottom: 2rem;
