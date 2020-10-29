@@ -288,7 +288,15 @@ main #index #rubros {
     padding: 2.5rem; }
 
 main #laEmpresa {
-  font-size: 1rem; }
+  padding: 1rem 0; }
+  main #laEmpresa .row {
+    margin: 0; }
+    main #laEmpresa .row p {
+      padding: 0.5rem 0;
+      margin: 0;
+      font-size: 1.2rem; }
+    main #laEmpresa .row img {
+      padding: 0; }
 
 /*----------*/
 /*Header*/

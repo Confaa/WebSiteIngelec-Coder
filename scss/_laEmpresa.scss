@@ -1,5 +1,16 @@
-main{
-    #laEmpresa{
-        font-size: 1rem;
+main {
+    #laEmpresa {
+        padding: 1rem 0;
+        .row {
+            margin: 0;
+            p {
+                padding: 0.5rem 0;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+            img {
+                padding: 0;
+            }
+        }
     }
 }
