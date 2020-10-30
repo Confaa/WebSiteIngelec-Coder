@@ -125,7 +125,7 @@ header {
 main #contacto {
   padding-bottom: 1rem; }
   main #contacto .row {
-    padding: 1rem 0; }
+    padding: 1rem; }
     main #contacto .row > div {
       padding: 0.5rem; }
     main #contacto .row form {
