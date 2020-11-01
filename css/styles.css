@@ -125,6 +125,7 @@ header {
 main #contacto {
   padding-bottom: 1rem; }
   main #contacto .row {
+    margin: 0;
     padding: 1rem; }
     main #contacto .row > div {
       padding: 0.5rem; }
@@ -295,15 +296,22 @@ main #index {
   padding: 1rem 0;
   background-color: #84c4fc;
   /*MEDIA QUERIES*/ }
-  #insumos .baseInsumos .customMarcas {
-    padding: 2.5rem; }
   @media (max-width: 767.98px) {
     #insumos h2 {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+    #insumos .customMarcas {
+      padding: 1.5rem; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #insumos .customMarcas {
+      padding: 2rem; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
+    #insumos .customMarcas {
+      padding: 2rem; }
     #insumos h2 {
       font-size: 2rem; } }
   @media (min-width: 992px) {
+    #insumos .customMarcas {
+      padding: 2.5rem; }
     #insumos h2 {
       font-size: 2.5rem; } }
 
@@ -432,22 +440,16 @@ div.obra a {
 
 /*MEDIA QUERIES*/
 @media (max-width: 575.98px) {
-  .customMarcas {
-    padding: 1.5rem; }
   h1 {
     font-size: 1.5rem; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .customMarcas {
-    padding: 2rem; }
   #galeria div {
     height: 115px; }
   h1 {
     font-size: 1.5rem; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .customMarcas {
-    padding: 1.5rem; }
   #galeria div {
     height: 115px; } }
 

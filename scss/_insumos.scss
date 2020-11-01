@@ -5,26 +5,35 @@
     padding: 1rem 0;
     background-color: $color-fondo;
 
-    .baseInsumos {
-        .customMarcas {
-            padding: 2.5rem;
-        }
-    }
     /*MEDIA QUERIES*/
 
     @include media-breakpoint-between(xs, md) {
         h2 {
             font-size: 1.7rem;
         }
+        .customMarcas {
+            padding: 1.5rem;
+        }
+    }
+    @include media-breakpoint-between(sm, md) {
+        .customMarcas {
+            padding: 2rem;
+        }
     }
 
     @include media-breakpoint-between(md, lg) {
+        .customMarcas {
+            padding: 2rem;
+        }
         h2 {
             font-size: 2rem;
         }
     }
 
     @include media-breakpoint-up(lg) {
+        .customMarcas {
+            padding: 2.5rem;
+        }
         h2 {
             font-size: 2.5rem;
         }

@@ -98,20 +98,12 @@ div.obra {
 /*MEDIA QUERIES*/
 
 @include media-breakpoint-between(xs, sm) {
-    .customMarcas {
-        padding: 1.5rem;
-    }
-
     h1 {
         font-size: 1.5rem;
     }
 }
 
 @include media-breakpoint-between(sm, md) {
-    .customMarcas {
-        padding: 2rem;
-    }
-
     #galeria {
         div {
             height: 115px;
@@ -124,10 +116,6 @@ div.obra {
 }
 
 @include media-breakpoint-between(md, lg) {
-    .customMarcas {
-        padding: 1.5rem;
-    }
-
     #galeria {
         div {
             height: 115px;
